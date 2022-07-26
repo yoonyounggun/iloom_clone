@@ -7,40 +7,98 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link rel="stylesheet" href="css/iloom.css" />
 	<title>일룸 클론 코딩</title>
 	
 </head>
 <body>
+	<div id="side" class="d-none">
+		<div class="side-details">
+			<div class="detalils-top">
+				<a href="#">&lt;&lt;&lt;click me</a>
+			</div>
+			<div class="detalils-body">
+				<p class="body-title">이 소식은 <br>놓치지 마세요</p>
+				<ul>
+					<li>
+						<figure>
+							<img src="images/promo1.jpg" alt="프로모션1">
+							<figcaption>#1.프로모션 바로보기</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="images/promo2.jpg" alt="프로모션2">
+							<figcaption>#2.취향체크인 하세요</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="images/promo3.png" alt="프로모션3">
+							<figcaption>#3.27평 신혼집 집들이</figcaption>
+						</figure>
+					</li>
+				</ul>
+	</div>
 	<header>
-		<nav class="iloom-nav"></nav>
-			<ul id="gnb">
-				<li><a href="#">침실</a></li>
-				<li><a href="#">거실</a></li>
-				<li><a href="#">주방</a></li>
-				<li><a href="#">키즈룸</a></li>
-				<li><a href="#">학생방</a></li>
-				<li><a href="#">서재</a></li>
-				<li><a href="#">펫</a></li>
-				<li><a href="#">시리즈</a></li>
-				<li><a href="#">아울렛</a></li>
-			</ul>
-		<div class="main-logo"></div>
-			<a href="#">
-				<img src="images/gnb_logo.png" alt="일룸">
-			</a>
-		<div class="main-links"></div>
-			<ul id="items">
-				<li><a href="#">이벤트</a></li>
-				<li><a href="#">로그인</a></li>
-				<li><a href="#">회원가입</a></li>
-				<li><a href="#">주문/배송</a></li>
-				<li><a href="#">고객지원</a></li>
-				<li><a href="#">매장안내</a></li>
-				<li><a href="#">검색아이콘</a></li>
-				<li><a href="#">장바구니 아이콘</a></li>
-			</ul>
+		<header-wrap>
+			<nav class="iloom-nav"></nav>
+				<ul id="gnb">
+					<li><a href="#">침실</a></li>
+					<li><a href="#">거실</a></li>
+					<li><a href="#">주방</a></li>
+					<li><a href="#">키즈룸</a></li>
+					<li><a href="#">학생방</a></li>
+					<li><a href="#">서재</a></li>
+					<li><a href="#">펫</a></li>
+					<li><a href="#">시리즈</a></li>
+					<li><a href="#">아울렛</a></li>
+				</ul>
+			<div class="main-logo"></div>
+				<a href="#">
+					<img src="images/gnb_logo.png" alt="일룸">
+				</a>
+			<div class="main-links"></div>
+				<ul id="items">
+					<li><a href="#">이벤트</a></li>
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">주문/배송</a></li>
+					<li><a href="#">고객지원</a></li>
+					<li><a href="#">매장안내</a></li>
+					<li><a href="#">
+					<span class="material-symbols-outlined">
+			search
+			</span></a></li>
+					<li><a href="#">
+					<span class="material-symbols-outlined">
+			shopping_bag
+			</span>
+					</a></li>
+				</ul>
+		</header-wrap>
 	</header>
+	<div class="carousel">
+		<div id="imgs">
+			<img src="images/caroulsel_img1.png" alt="프로모션이미지">
+			<img src="images/caro2.jpg" alt="프로모션이미지2">
+			<img src="images/caro3.png" alt="프로모션 이미지3">
+			
+		</div>
+		<div class="btns">
+			<button>
+				<span class="material-symbols-outlined">
+chevron_left
+</span>
+			</button>
+			<button>
+				<span class="material-symbols-outlined">
+chevron_right
+</span>
+			</button>
+		</div>
+	</div>
 	
 </body>
 </html>
