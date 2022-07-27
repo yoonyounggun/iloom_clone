@@ -1,52 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-	<link rel="stylesheet" href="css/iloom.css?ver=1.1" />
-	<title>일룸 클론 코딩</title>
-	
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="css/iloom.css" />
+<title>일룸 clone</title>
 </head>
 <body>
 	<div id="side" class="d-none">
 		<div class="side-details">
-			<div class="detalils-top">
+			<div class="details-top">
 				<a href="#">&lt;&lt;&lt;click me</a>
 			</div>
-			<div class="detalils-body">
-				<p class="body-title">이 소식은 <br>놓치지 마세요</p>
+			<div class="details-body">
+				<p class="body-title">이 소식은<br> 놓치지 마세요</p>
 				<ul>
 					<li>
 						<figure>
-							<img src="images/promo1.jpg" alt="프로모션1">
-							<figcaption>#1.프로모션 바로보기</figcaption>
+							<img src="images/promo1.jpg" alt="프로모션#1">
+							<figcaption>#1.프로모션 바로 보기</figcaption>
 						</figure>
 					</li>
 					<li>
 						<figure>
-							<img src="images/promo2.jpg" alt="프로모션2">
-							<figcaption>#2.취향체크인 하세요</figcaption>
+							<img src="images/promo2.jpg" alt="프로모션#2">
+							<figcaption>#2.취향체크인 하세요!</figcaption>
 						</figure>
 					</li>
 					<li>
 						<figure>
-							<img src="images/promo3.png" alt="프로모션3">
+							<img src="images/promo3.jpg" alt="프로모션#3">
 							<figcaption>#3.27평 신혼집 집들이</figcaption>
 						</figure>
 					</li>
 				</ul>
 			</div>
-		</div>			
+			<div class="details-bottom">
+				<a href="#">&lt;&lt;&lt;click me</a>
+			</div>
+		</div>
+		<a href="#">click me</a>
 	</div>
 	<header>
-		<div class="header_wrap">
-			<nav class="iloom-nav">
+		<div class="header-wrap">
+			<nav class="main-nav">
 				<ul id="gnb">
+					<li><a href="#"><img src="images/icon_menu_30px.svg" alt="전체메뉴"></a></li>
 					<li><a href="#">침실</a></li>
 					<li><a href="#">거실</a></li>
 					<li><a href="#">주방</a></li>
@@ -60,52 +64,89 @@
 			</nav>
 			<div class="main-logo">
 				<a href="#">
-					<img src="images/gnb_logo.png" alt="일룸">
+					<img src="images/gnb_logo.png" alt="일룸 | iloom">
 				</a>
 			</div>
-			<div class="main-links">		
-				<ul id="items">
+			<div class="main-links">
+				<ul class="items">
 					<li><a href="#">이벤트</a></li>
 					<li><a href="#">로그인</a></li>
 					<li><a href="#">회원가입</a></li>
 					<li><a href="#">주문/배송</a></li>
 					<li><a href="#">고객지원</a></li>
 					<li><a href="#">매장안내</a></li>
-					<li><a href="#">
-					<span class="material-symbols-outlined">
-			search
-			</span></a></li>
-					<li><a href="#">
-					<span class="material-symbols-outlined">
-			shopping_bag
-			</span>
-					</a></li>
+					<li><a href="#"><img src="images/icon_search_30px.svg" alt="검색"></a></li>
+					<li><a href="#"><img src="images/icon_cart_30px.svg" alt="장바구니"></a></li>
 				</ul>
 			</div>
 		</div>
-	
+		<!-- /.header-wrap -->
 	</header>
 	<div class="carousel">
 		<div id="imgs">
-			<img src="images/caroulsel_img1.png" alt="프로모션이미지">
-			<img src="images/caro2.jpg" alt="프로모션이미지2">
-			<img src="images/caro3.png" alt="프로모션 이미지3">
-			
+			<img src="images/carousel-img1.jpg" alt="프로모션 이미지">
+			<img src="images/carousel-img2.jpg" alt="프로모션 이미지">
+			<img src="images/carousel-img3.jpg" alt="프로모션 이미지">
+			<img src="images/carousel-img4.jpg" alt="프로모션 이미지">
+			<img src="images/carousel-img5.jpg" alt="프로모션 이미지">
+			<img src="images/carousel-img6.jpg" alt="프로모션 이미지">
+			<img src="images/carousel-img7.png" alt="프로모션 이미지">
 		</div>
 		<div class="btns">
 			<button>
-				<span class="material-symbols-outlined">
-chevron_left
-</span>
+				<span class="material-symbols-outlined">chevron_left</span>
 			</button>
 			<button>
-				<span class="material-symbols-outlined">
-chevron_right
-</span>
+				<span class="material-symbols-outlined">navigate_next</span>
 			</button>
 		</div>
 	</div>
-	<!-- github desktop을0000 오늘은 사444444용합니다, -->
-	<div></div>
+	<div class="recommend">
+		<p class="rec_title">고객님을 위한 제품 추천</p>
+		<ul>
+			<li>
+				<a href="#">
+					<img src="images/recommend1.jpg" alt="쿠시노 저상형 침대">
+					<p class="desc"><span class="brand-name">[일룸]</span>쿠시노 저상형 침대</p>
+					<p class="price">525,000</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="images/recommend2.jpg" alt="헤이즐 침대">
+					<p class="desc"><span class="brand-name">[일룸]</span>헤이즐 침대</p>
+					<p class="price">525,000</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="images/recommend3.jpg" alt="쿠시노 저상형 침대1">
+					<p class="desc"><span class="brand-name">[일룸]</span>쿠시노 저상형 침대</p>
+					<p class="price">525,000</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="images/recommend4.jpg" alt="쿠시노 저상형 침대2">
+					<p class="desc"><span class="brand-name">[일룸]</span>쿠시노 저상형 패밀리 침대</p>
+					<p class="price">1,096,000</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="images/recommend5.jpg" alt="플롭 플롭 캐주얼 3인">
+					<p class="desc"><span class="brand-name">[일룸]</span>플롭 플롭 캐주얼 3인</p>
+					<p class="price">625,000</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="images/recommend6.jpg" alt="플롭 플롭 캐주얼 5인">
+					<p class="desc"><span class="brand-name">[일룸]</span>플롭 플롭 캐주얼 5인</p>
+					<p class="price">625,000</p>
+				</a>
+			</li>
+		</ul>
+	</div>
 </body>
 </html>
