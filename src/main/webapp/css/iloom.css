@@ -43,6 +43,7 @@ a, a:link {
 }
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item, .bx-wrapper .bx-pager-item {
     display: none;
+    
     /* vertical-align: bottom; */
 }
 
@@ -100,4 +101,22 @@ header {
 .price {
 	color: #bd0000;
 	font-size: .75em;
+}
+
+/*============promotion======*/
+.promotion {
+	max-width: 1280px;
+	margin: 2em auto;
+	overflow: hidden;
+}
+.event-banner {
+	margin-bottom: 1em;
+}
+.promotion-list {
+	display: flex;
+	column-gap: 1em;
+}
+.promotion-list img {
+	object-fit: cover;
+	max-width: 100%;
 }
