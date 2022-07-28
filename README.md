@@ -2,7 +2,7 @@
 ## 일룸 웹사이트 클론 코딩 
 
 일룸 웹사이트 클론 코딩(일주일)
-![일룸메인] (https://m.blog.naver.com/iloom_blog/221053286254)
+![일룸메인](https://www.businesspost.co.kr/news/photo/202109/20210910160001_41451.jpg)
 ##목표
 
 일룸 웹사이트를 클론코딩 할 수 있다
