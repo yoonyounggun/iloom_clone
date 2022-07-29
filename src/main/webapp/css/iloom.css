@@ -155,3 +155,48 @@ header {
 .special-title a {
 	margin-left: 3em;
 }
+.special-list { /*flex:1차원 (행 or 열) grid:2차원 (행+열), table이랑 비슷*/
+	max-width: 1280px;
+	margin: 100px auto 50px;	/*위, 좌우, 아래*/
+	display: grid;			/*repeat(4,1fr) : 1fr을 4번 반복해줘!*/
+	grid-template-columns: 1fr 1fr 1fr 1fr; /*fraction: 전체공간의 합을 비율로 표현*/
+	/* grid-template-rows: 400px 150px; */
+	column-gap: 1rem;
+}
+
+
+.special-list img {
+	width: 308px;
+	height: 308px;
+}
+
+.attach-img {
+	border-radius: 20px;
+	overflow: hidden;	/*라운드 된 만큼 감춰줘*/
+}
+
+.rank-point {
+	color: #cc0000;
+	font-size: 1.250em;
+	letter-spacing: 3px;
+	margin: 0.5em 0; 		/*em: 엠~ rem: 알엠~!*/
+}
+
+.write-title {
+	font-size: 1.250em;
+	font-weight: 800;		/* 100~900(단위없음), thin/bord/border */
+	
+}
+.write-body {
+	font-size: .875em;
+	text-overflow: ellipsis; /*넘치면 단축? 줄이기 : ... 처리(생략)*/
+	overflow: hidden;
+	word-break: break-word;
+	/*white-space: nowrap; 줄바꿈하지 않고 '한줄'로 길게 */
+
+	
+	display: -webkit-box;	/*vendor prefix:표준 속성이 아닐때 다른 브라우저가 지원할 수 있는 접두어 추가 */
+	-webkit-line-clamp: 2;	/*원하는 라인 수 */
+	-webkit-box-orient: vertical
+}
+
