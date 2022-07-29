@@ -166,11 +166,12 @@ header {
 
 
 .special-list img {
-	width: 308px;
-	height: 308px;
+	max-width: 100%;
+	
 }
 
 .attach-img {
+	height: 300px;
 	border-radius: 20px;
 	overflow: hidden;	/*라운드 된 만큼 감춰줘*/
 }
@@ -197,6 +198,47 @@ header {
 	
 	display: -webkit-box;	/*vendor prefix:표준 속성이 아닐때 다른 브라우저가 지원할 수 있는 접두어 추가 */
 	-webkit-line-clamp: 2;	/*원하는 라인 수 */
-	-webkit-box-orient: vertical
+	-webkit-box-orient: vertical;
+}
+.relate-item {
+	display: flex;
+	justify-content: space-between;
+	margin: 1em 0 0 0;
+
+}
+/*
+.relate-item::before {
+	content: '';
+	border-top: 1px dashed #f0f0f0;
+	width: 100%;
+	display: block;
+}*/
+.item-image {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
 }
 
+.like-item::after {
+	content:'';
+	display: inline-block;
+	color:red;
+	height: 16px;
+	width: 16px;
+	background: url("../images/icon_likeHt.svg")
+}
+
+.item-title {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 5em; 
+	overflow:hidden;
+	font-weight:bold;
+	
+}
+	
+.item-location, .item-price {
+	font-size: .725em;
+	color: grey;
+}
