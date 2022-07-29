@@ -242,3 +242,38 @@ header {
 	font-size: .725em;
 	color: grey;
 }
+
+/*==============aside=======*/
+
+aside {
+	background: #e0e0e0;
+}
+
+.sns {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.sns p {
+	text-align: center;
+
+}
+
+.sns p:nth-child(1) {
+	font-size:1.750em;
+	text-transform: uppercase;
+	margin: 1em 0;
+	
+}
+
+.sns p:nth-child(2) {
+	font-size:1.250em;
+	
+}
+.sns-posts {
+	display: flex; /*display:grid*/
+	
+}
+
+.sns-posts img {
+	width: 200px;
+}
